@@ -71,20 +71,20 @@ html,body{
 .posts_container{
     position: fixed;
     padding-top:3vh;
-    padding-bottom: 11vh;
+    padding-bottom: 13vh;
     top: 9vh; 
     left: 0;
     width: 100%;
     height: calc(100% - 9vh);
     overflow-y: auto; 
-    background-color: grey;
+    background-color: rgb(238,248,245);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 3vh;
 }
 
-.post1 {
+.post {
     width: 50vh;
     height: 70vh;
     margin: auto;
@@ -101,7 +101,8 @@ html,body{
     align-items: center;
     overflow: hidden;
     padding: 4px 10px;
-    background-color: beige;
+    background-color: rgba(255, 255, 255, 0.235);
+    backdrop-filter: blur(200px);
     border-radius: 4px;
 }
 .user_post_details{
@@ -163,7 +164,7 @@ html,body{
     justify-content: space-between;
     align-items: baseline;
     padding: 4px 10px;
-    background-color: beige;
+    background-color: rgb(238,248,245);
     height: 100%;
 }
 .post_footer_left_elements{
