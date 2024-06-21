@@ -70,7 +70,7 @@ html,body{
 
 .posts_container{
     position: fixed;
-    padding-top:2vh;
+    padding-top:3vh;
     padding-bottom: 11vh;
     top: 9vh; 
     left: 0;
@@ -78,18 +78,19 @@ html,body{
     height: calc(100% - 9vh);
     overflow-y: auto; 
     background-color: grey;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3vh;
 }
 
 .post1 {
-    width: 95%;
-    height: 92%;
+    width: 50vh;
+    height: 70vh;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: 1px solid black; 
     background-color: #fff;
-    border-radius: 3%;
+    border-radius: 1vh;
     overflow: hidden;
 }
 .user_container{
