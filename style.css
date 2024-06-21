@@ -118,36 +118,36 @@ html,body{
 
 
 .footer {
-    height: 8vh;
+    height:9vh;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(to right, #4CAF50, #2196F3); 
-    color: white; 
-    padding: 10px 0;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; 
+    background-image: linear-gradient(to right, #4CAF50, #2196F3); /* Example gradient from green to blue */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for spacing */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+    z-index: 1000; /* Ensures the footer is above other elements */
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    justify-content: space-evenly;
+    align-items: center; /* Center align items vertically */
 }
 .icon {
-    width: 40px; 
-    height: 40px;
-    font-size: 5vh; 
+    width: 40px; /* Set consistent width for all icons */
+    height: 40px; /* Set consistent height for all icons */
+    font-size:6vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white; /* Icon color */
 }
 .icon img {
-    width: 75%; 
-    height: 75%; 
-    border-radius: 50%;
-    object-fit: cover; 
+    width: 90%; /* Ensure the image fills the icon container */
+    height: 90%; /* Ensure the image fills the icon container */
+    border-radius: 50%; /* Make the profile image circular */
+    object-fit: cover; /* Ensure the image covers the container */
 }
-
 .footer .icon:nth-child(1){
     font-size:5vh;
 }
+
