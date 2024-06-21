@@ -149,7 +149,37 @@ html,body{
 .ri-more-2-fill{
     font-size: larger;
 }
-
+.post_photo{
+    width: 100%;
+    height: 80%;
+}
+.post_photo img{
+    width: 100%;
+    height: 100%;
+}
+.post_footer_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 4px 10px;
+    background-color: beige;
+    height: 100%;
+}
+.post_footer_left_elements{
+    display: flex;
+    justify-content: baseline;
+}
+.post_footer_right_elements{
+    justify-content: baseline;
+}
+.post_footer_container i{
+    color: black;
+    font-size: xx-large;
+}
+.ri-thumb-up-line{
+    color: #50D8D7;
+}
 
 
 
