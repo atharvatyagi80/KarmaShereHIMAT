@@ -77,8 +77,9 @@ html,body{
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 3px solid aqua; 
+    border: 1px solid aqua; 
     background-color: #fff;
+    border-radius: 4px;
 }
 .user_container{
     display: flex;
@@ -89,6 +90,7 @@ html,body{
     overflow: hidden;
     padding: 4px 10px;
     background-color: beige;
+    border-radius: 4px;
 }
 .user_post_details{
     display: flex;
