@@ -41,6 +41,7 @@ html,body{
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 
 
@@ -65,17 +66,18 @@ html,body{
     width: 100%;
     height: calc(100% - 3vh);
     overflow-y: auto; 
-    background-color: aquamarine;
-
+    background-color: grey;
+    bottom: -80px;
 }
 
 .post1 {
-    width: 80%;
-    height: 81%;
+    width: 95%;
+    height: 82%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 3px solid black; 
+    border: 1px solid aqua; 
+    border-radius: 4px;
     background-color: #fff;
 }
 .user_container{
@@ -85,39 +87,56 @@ html,body{
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 4px 8px;
+    padding: 4px 10px;
     background-color: beige;
 }
 .user_post_details{
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 8px;
 }
 .profile_picture_container{
     width: 40px;
     height: 40px;
     border-radius: 20px;
     overflow: hidden;
-    border: 2px solid black;
+    border: 2px solid aqua;
 }
 .profile_picture_container img{
     height: 100%;
     width: 100%;
 }
-.circum--menu-kebab {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23F44344' d='M14.5 12a2.5 2.5 0 0 1-5 0a2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 13.5 12m1-7.437a2.5 2.5 0 0 1-5 0a2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 0-3.001.001a1.5 1.5 0 0 0 3.001-.001m1 14.874a2.5 2.5 0 0 1-5 0a2.5 2.5 0 0 1 5 0m-1 0a1.5 1.5 0 1 0-3.001.001a1.5 1.5 0 0 0 3.001-.001'/%3E%3C/svg%3E");
-}
+
 .user_name_container h2{
     height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .user_name_container p{
-    height: 20px;
+    height: 100%;
 }
+.user_name_container h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+.user_name_container p{
+    font-size: small;
+}
+.post_menu_container{
+    height: 100%;
+}
+.post_menu_container i{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.ri-more-2-fill{
+    font-size: larger;
+}
+
+
 
 
 .footer {
