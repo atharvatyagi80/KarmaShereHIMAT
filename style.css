@@ -59,7 +59,13 @@ html,body{
     text-decoration: none;
 }
 
-
+.left_container{
+    height: 0;
+    width: 0;
+    display: none;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
 .posts_container{
     position: fixed;
     padding-top:3vh;
@@ -228,7 +234,22 @@ html,body{
     font-size:8vh;
 }
 
+@media (min-width: 768px) {
+    .footer{
+        display: none;
+    }
+    .left_container {
+        display: block;
+        width: 30%;
+        height: calc(100% - 9vh);
+        position: fixed;
+        top: 9vh;
+        left: 0;
+    }
 
-.left_container{
-    margin-top: 10vh;
+    .posts_container {
+        right:0;
+        width: 70%;
+        left: 20%;
+    }
 }
