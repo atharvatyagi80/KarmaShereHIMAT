@@ -12,7 +12,7 @@ html,body{
 
 .main{
     height: 100%;
-    weight: 100%;
+    width: 100%;
 }
 
 .nav {
@@ -59,14 +59,6 @@ html,body{
     text-decoration: none;
 }
 
-.stories_container{
-    display: flex;
-    width: 100%;
-}
-
-.stories_container .profile_picture_container{
-
-}
 
 .posts_container{
     position: fixed;
@@ -236,3 +228,7 @@ html,body{
     font-size:8vh;
 }
 
+
+.left_container{
+    margin-top: 10vh;
+}
