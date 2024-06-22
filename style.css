@@ -164,8 +164,10 @@ html,body{
     justify-content: space-between;
     align-items: baseline;
     padding: 4px 10px;
-    background-color: rgb(238,248,245);
+    
     height: 100%;
+    background-color: rgba(255, 255, 255, 0.235);
+    backdrop-filter: blur(200px);
 }
 .post_footer_left_elements{
     display: flex;
@@ -177,6 +179,7 @@ html,body{
 .post_footer_container i{
     color: black;
     font-size: xx-large;
+    
 }
 .ri-thumb-up-line{
     color: #50D8D7;
