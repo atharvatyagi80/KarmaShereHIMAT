@@ -192,7 +192,7 @@ html,body{
 
 
 .footer {
-    height:9vh;
+    height:7vh;
     position: fixed;
     bottom: 2vh; 
     left: 50%;
@@ -226,5 +226,13 @@ html,body{
 }
 .footer .icon:nth-child(1){
     font-size:5vh;
+}
+
+.footer .icon:nth-child(2){
+    height:9vh;
+    width:9vh;
+    background-image: linear-gradient(to right,#2196F3, #4CAF50); 
+    border-radius:50%;
+    font-size:8vh;
 }
 
