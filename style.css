@@ -253,23 +253,6 @@ html,body{
         padding: 20px;
         gap:5vh;
     }
-    .posts_container {
-        background:url('https://img.freepik.com/free-vector/gradient-glassmorphism_23-2149456191.jpg?size=626&ext=jpg') no-repeat center center/cover;
-        position: relative;
-        width: 60%;
-        height: 100%;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        left: 40%;
-    }
-
-    .post{
-        
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px) brightness(1);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }
 
     .main_container .profileimg{
         padding-top:2vh;
@@ -318,9 +301,27 @@ html,body{
         line-height: 4vh;
     }
 
-    
-
     .profilethings h3{
         font-weight:100;
     }
+
+    /*  post starts */
+    .posts_container {
+        background:url('https://img.freepik.com/free-vector/gradient-glassmorphism_23-2149456191.jpg?size=626&ext=jpg') no-repeat center center/cover;
+        position: relative;
+        width: 60%;
+        height: 100%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        left: 40%;
+    }
+
+    .post{
+        
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px) brightness(1);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
 }
