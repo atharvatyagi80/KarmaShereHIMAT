@@ -347,4 +347,8 @@ html,body{
         margin-right: 1vh;
     }
 
+    .post{
+        height: 80vh;
+    }
+
 }
