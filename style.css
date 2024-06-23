@@ -239,6 +239,20 @@ html,body{
     font-size:8vh;
 }
 
+/* like icon css */
+
+.like-icon {
+    color: black;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.like-icon.liked {
+    color: blue;
+}
+
+
+
 @media (min-width: 768px) {
     .footer{
         display: none;
