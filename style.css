@@ -375,19 +375,22 @@ html,body{
 
 @media (min-width: 1024px){
     .main_container{
-        margin: 9vh 40px;
+        margin: 9vh 80px;
         overflow: hidden;
     }
     .left_container{
-        width: 30%;
+        width: 25%;
         position: none;
     }
     .posts_container{
-        width: 40%;
+        width: 50%;
         position: none;
     }
+    .post{
+        width: 70%;
+    }
     .right_container{
-        width: 30%;
+        width: 25%;
         height: 100%;
         background:url('https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148922413.jpg?size=626&ext=jpg&ga=GA1.1.1084561895.1718990333&semt=ais_user') no-repeat center center/cover;
         position: none;
