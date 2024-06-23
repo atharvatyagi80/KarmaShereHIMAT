@@ -170,68 +170,6 @@ html,body{
     opacity: 0.7;
 }
 
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9); /* Adjust opacity as needed */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #fff; /* Adjust to a lighter color if necessary for better contrast */
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Animation */
-.modal-content, #caption {  
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from { transform: scale(0); } 
-    to { transform: scale(1); }
-}
-
-/* Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover, .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .post_footer_container{
     display: flex;
     width: 100%;
@@ -438,10 +376,6 @@ html,body{
     .post{
         height: 80vh;
     }
-    .modal{
-        height:90%;
-
-    }
     
 }
 
@@ -530,26 +464,5 @@ html,body{
         font-family: "Open Sans", sans-serif;
         font-size: 10px;
         font-weight: 500;
-    }
-
-    .modal{
-        height:90%;
-
-    }
-
-}
-
-@media (min-width: 1440px){
-    .modal{
-        height:100%;
-
-    }
-    .close {
-        top: 5vh;
-        font-size:6vh;
-    }
-
-    .modal-content {
-        margin-top:8vh;
     }
 }
