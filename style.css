@@ -250,6 +250,9 @@ html,body{
 .like-icon.liked {
     color: skyblue;
 }
+.right_container{
+    display: none;
+}
 
 
 
@@ -392,7 +395,73 @@ html,body{
     .right_container{
         width: 25%;
         height: 100%;
-        background:url('https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148922413.jpg?size=626&ext=jpg&ga=GA1.1.1084561895.1718990333&semt=ais_user') no-repeat center center/cover;
+        background-color: #FDF8F7;
         position: none;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
+    .message_search_bar{
+        width: 100%;
+        height: 30px;
+        border-radius: 6px;
+        border: 1px solid grey;
+    }
+    .message_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .messenger_container{
+        width: 100%;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        gap: 5px;
+    }
+    .message{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .messenger_image{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .messenger_image img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .messenger_name{
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+    }
+    .highlighted_message{
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    .dot{
+        background-color: black;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+    }
+    .unseen_message_time{
+        display: flex;
+        align-items: last baseline;
+    }
+    .message_time{
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+
 }
