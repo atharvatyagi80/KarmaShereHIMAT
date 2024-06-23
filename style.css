@@ -332,12 +332,12 @@ background: linear-gradient(to right, #E8877A, #fff); /* W3C, IE 10+/ Edge, Fire
     }
 
     .profile_picture_container{
-        height: 50px;
-        width: 50px;
+        height: 6vh;
+        width: 6vh;
         border-radius: 50%;
     }
     .user_name_container h2{
-        font-size: x-large;
+        font-size: 3vh;
     }
     .post_footer_container i{
         font-size: 4vh;
