@@ -16,7 +16,11 @@ html,body{
 }
 
 .nav {
-    background-image: linear-gradient(to right, #923993, #50D8D7);
+    background: #8A2387;
+  background: linear-gradient(
+    to right,
+    #8A2387,#E94057,#F27121
+  );
     position: fixed;
     top: 0;
     z-index: 100;
@@ -48,23 +52,32 @@ html,body{
 .menu ul{
     padding-right:10px;
     height:100%;
-    font-size:5vh;
+    font-size:4vh;
     list-style: none;
     display: flex;
     flex-direction: row;
     gap:5vw;
 }
-
+.menu ul i{
+    color: #fff;
+}
 .menu ul li a{
     text-decoration: none;
 }
+.main_container{
+    background: #e1eec3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E8877A, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E8877A, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+}
 .left_container{
     height: 0;
     width: 0;
     display: none;
     background-color: #f8f8f8;
 }
+
 .posts_container{
     padding-top:13vh;
     padding-bottom: 13vh;
@@ -73,7 +86,6 @@ html,body{
     width: 100%;
     height: calc(100% - 9vh);
     overflow-y: auto; 
-    background-color: rgb(238,248,245);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -84,22 +96,24 @@ html,body{
     width: 45vh;
     height: 70vh;
     margin: auto;
-    border: 1px solid black; 
-    background-color: #fff;
-    border-radius: 1vh;
+    /* From https://css.glass */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .user_container{
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 10%;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     padding: 4px 10px;
-    background-color: rgba(255, 255, 255, 0.235);
-    backdrop-filter: blur(200px);
-    border-radius: 4px;
+    z-index: 5;
 }
 .user_post_details{
     display: flex;
@@ -121,20 +135,15 @@ html,body{
 }
 
 .user_name_container h2{
-    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.user_name_container p{
-    height: 100%;
-}
-.user_name_container h2{
     font-family: "Open Sans", sans-serif;
-    font-size: large;
+    font-size: larger;
     font-weight: 600;
 }
 .user_name_container p{
+    height: 100%;
     font-size: small;
 }
 .post_menu_container{
@@ -162,19 +171,13 @@ html,body{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
-    padding: 4px 10px;
-    
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(200px);
+    padding: 0 10px;
+    align-items: center;
+    height: 10%;
 }
 .post_footer_left_elements{
     display: flex;
-    justify-content: baseline;
-}
-.post_footer_right_elements{
-    justify-content: baseline;
+    gap: 100px;
 }
 .post_footer_container i{
     color: black;
@@ -194,8 +197,11 @@ html,body{
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    background-image: linear-gradient(to right, #4CAF50, #2196F3); 
-    color: white; 
+    background: #8A2387;
+    background: linear-gradient(
+      to right,
+      #8A2387,#E94057,#F27121
+    );
     padding: 10px 0; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
     border-radius: 50px; 
@@ -223,11 +229,14 @@ html,body{
 .footer .icon:nth-child(1){
     font-size:5vh;
 }
-
 .footer .icon:nth-child(2){
     height:9vh;
     width:9vh;
-    background-image: linear-gradient(to right,#2196F3, #4CAF50); 
+    background: #8A2387;
+    background: linear-gradient(
+      to left,
+      #8A2387,#E94057,#F27121
+    ); 
     border-radius:50%;
     font-size:8vh;
 }
@@ -238,10 +247,10 @@ html,body{
     }
     .main_container{
         display: flex;
-        height: calc(100% - 9vh);
+        height: 100%;
+        margin-top: 9vh;
     }
     .left_container {
-        background:url('https://img.freepik.com/free-vector/gradient-glassmorphism_23-2149456191.jpg?size=626&ext=jpg') no-repeat  center/cover;
         position: fixed;
         top: 9vh;
         left: 0;
@@ -249,7 +258,7 @@ html,body{
         height: calc(100% - 9vh);
         display: flex;
         flex-direction: column;
-        background-color: grey;
+        background-color: white;
         padding: 20px;
         gap:5vh;
     }
@@ -257,12 +266,8 @@ html,body{
     .main_container .profileimg{
         padding-top:2vh;
         padding-bottom:2vh;
-        color:white;
+        color:black;
         font-size:12px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px) brightness(1);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
         height:25%;
         width: 100%;
         display: flex;
@@ -270,6 +275,13 @@ html,body{
         align-items: center;
         gap:2vh;
         justify-content: center;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
     
     .main_container .profileimg img{
@@ -287,18 +299,21 @@ html,body{
 
 
     .profilethings{
-        color:white;
+        color:black;
         height: auto;
         width: 100%;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px) brightness(1);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
         display:flex;
         flex-direction: column;
         align-items: evenly;
         padding: 10px;
         line-height: 4vh;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .profilethings h3{
@@ -307,21 +322,26 @@ html,body{
 
     /*  post starts */
     .posts_container {
-        background:url('https://img.freepik.com/free-vector/gradient-glassmorphism_23-2149456191.jpg?size=626&ext=jpg') no-repeat center center/cover;
         position: relative;
         width: 60%;
         height: 100%;
-        padding-top: 3vh;
+        padding-top: 7vh;
         padding-bottom: 3vh;
         left: 40%;
+        top: 0;
     }
 
-    .post{
-        
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px) brightness(1);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+    .profile_picture_container{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .user_name_container h2{
+        font-size: x-large;
+    }
+    .post_footer_container i{
+        font-size: 4vh;
+        margin-right: 1vh;
     }
 
 }
